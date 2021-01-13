@@ -1,9 +1,8 @@
-# RTL8723BS-linux-module
+### RTL8723BS-linux-module
 Modulo de Wifi para el tablet SW1-011 (RTL8723bs)
 
 Para compilar el modulo deber realizar lo siguente:
 
-'''
 # Obtener las dependencies
 sudo apt-get install git build-essential kernel-package fakeroot libncurses5-dev libssl-dev ccache bison flex
 # Crea una carpeta para realizar todo el procedimiento. En mi caso use la carpeta personal.
@@ -31,4 +30,3 @@ echo '80860F14:01' > /sys/bus/platform/drivers/sdhci-acpi/bind
 # Verifica que funciona
 dmesg
 iwconfig
-'''
