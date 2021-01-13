@@ -9,7 +9,7 @@ sudo apt-get install git build-essential kernel-package fakeroot libncurses5-dev
 mkdir linux
 ### Obtener la fuente del Kernel. En mi caso use el repositorio de "Hans de Goede" ya que dispone de los branch por orden de version.
 git clone -b v5.4-footrail https://github.com/jwrdegoede/linux-sunxi.git # El comando -b (version) es del branch de la version de kernel
-# Copia la configuracion existente de tu Kernel del sistema
+### Copia la configuracion existente de tu Kernel del sistema
 cp /boot/config-`uname -r` .config
 ### Copia el archivo "symbol" de tu kernel al direcctorio de la fuente de kernel que usaras. Este archivo guarda que nombre de las funciones existen en el kernel que estas usando, asi que nuestro nuevo modulo estara ahí.
 cp /usr/src/linux-headers-5.4.0-050400-generic/Module.symvers ./          #El direcctorio cambiara segun la version del kernel que uses
